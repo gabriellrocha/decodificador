@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content1="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon">
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <header></header>
+    <main class="principal">
+
+        <section class="principal__secao1">
+
+            <textarea placeholder="Digite seu texto" class="principal__secao1__textarea__input" maxlength="100" id="textAreaInput"></textarea>
+
+            <div>
+
+                <div class="principal__secao1__div__textos">
+                    <img src="./assets/icone-exclamacao.png" alt="icone-exclamacao">
+                    <p id="paragrafo__informativo">Apenas letras minúsculas e sem acento.</p>
+                </div>
+
+                <div class="principal__secao1__div__botoes">
+                    <button class="botoes__cripto__descripto" id="botao__cripto" onclick="criptografar()">Criptografar</button>
+                    <button class="botoes__cripto__descripto" onclick="descriptografar()">Descriptografar</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="principal__secao2" id="secao2">
+
+            <textarea class="principal__secao2__textarea__output" id="textAreaOutput"></textarea>
+
+            <div id="div__img__bonequinha">
+                <img src="./assets/1.svg" alt="imagem-bonequinha" id="img-bonequinha">
+            </div>
+
+            <div id="principal__secao2__div__textos">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <button class="botao__copiar" id="botao__copiar" onclick="copiarTexto()">Copiar</button>
+                        
+        </section>
+
+        <script src="main.js"></script>
+    </main>
+</body>
+</html>
